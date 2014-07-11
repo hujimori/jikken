@@ -19,8 +19,8 @@ public class Ex202 {
 		Caluculate caluculate = new Caluculate();
 		caluculate.setNum(num);
 		
-		System.out.println("球の表面積は"+caluculate.getResult1()+"です");
-		System.out.println("球の堆積は"+caluculate.getResult2()+"です");
+		System.out.println("球の表面積は"+caluculate.getSurfaceArea()+"です");
+		System.out.println("球の堆積は"+caluculate.getVolume()+"です");
 		
 		
 	}
@@ -40,12 +40,12 @@ class Caluculate {
 		}
 	}
 	
-	public double getResult1() {
+	public double getSurfaceArea() {
 		
 		return   4 * Math.PI * num * num;
 	}
 	
-	public double getResult2() {
+	public double getVolume() {
 		return 4 / 3 * num * num * num;
 	}
 }
